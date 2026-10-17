@@ -1,8 +1,8 @@
 async function fetchlist() {
   try {
-    const commits = await fetch("https://api.github.com/repos/Monochromasity/EXARDL/commits?path=list.json");
+    const commits = await fetch("https://api.github.com/repos/Monochromasity/ClutterGDPS/commits?path=list/list.json");
     const cjson = await commits.json();
-    const response = await fetch("https://raw.githubusercontent.com/Monochromasity/EXARDL/" + cjson[0]["sha"] + "/list.json");
+    const response = await fetch("https://raw.githubusercontent.com/Monochromasity/ClutterGDPS/" + cjson[0]["sha"] + "/list/list.json");
     const list = await response.json();
     return list;
   } catch (error) {
