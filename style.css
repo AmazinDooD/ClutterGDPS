@@ -1,0 +1,107 @@
+body {
+  background-color: #292929;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  padding: 10px 40px;
+}
+a.hlink {
+  text-decoration: none;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  transition-duration: 0.4s;
+  margin: 10px;
+}
+a.hlink:hover {
+  background-color: #333333;
+  font-size: 36px;
+  margin: 7px;
+}
+.header {
+  border-bottom: 2px solid #424242;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  font-size: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.main {
+  display: flex;
+  margin-top: 20px;
+}
+.list {
+  flex: 25%;
+  background-color: #222222;
+  border-radius: 8px;
+  padding: 10px;
+  margin-right: 10px;
+  overflow-y: auto;
+}
+.level {
+  flex: 75%;
+  background-color: #222222;
+  border-radius: 8px;
+  padding: 10px;
+}
+.item {
+  font-size: 26px;
+  background-color: #292929;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 10px;
+  transition-duration: 0.4s;
+}
+.item:hover {
+  background-color: #424242;
+  cursor: pointer;
+}
+.selected {
+  background-color: #424242;
+}
+.rank {
+  margin-left: 20px;
+  margin-right: 60px;
+  display: inline-block;
+  width: 2px;
+}
+.name {
+  display: inline-block;
+}
+.levelname {
+  font-size: 40px;
+  padding: 10px;
+  border-bottom: 2px solid #424242;
+}
+.cpvlabel {
+  font-size: 20px;
+  padding: 10px;
+}
+.lowerdiv {
+  display: flex;
+  justify-content: center;
+}
+.detailsdiv {
+  flex: 66.54%;
+}
+.recordsdiv {
+  flex: 33.46%;
+}
+.desc {
+  padding: 10px;
+}
+.video {
+  display: flex;
+  margin: 20px;
+  border: hidden;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 560px;
+  height: 315px;
+}
