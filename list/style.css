@@ -41,7 +41,7 @@ a.hlink:hover {
   margin-right: 10px;
   overflow-y: auto;
 }
-.level {
+#level {
   flex: 75%;
   background-color: #222222;
   border-radius: 8px;
@@ -104,4 +104,14 @@ a.hlink:hover {
   align-items: center;
   width: 560px;
   height: 315px;
+}
+
+/* stuff for mobile */
+@media (width <=900px) {
+  .lowerdiv {
+    flex-direction: column;
+  }
+  .video {
+    width: 95%;
+  }
 }
