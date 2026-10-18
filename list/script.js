@@ -143,6 +143,7 @@ async function printlist() {
 function updateLevels() {
   const allLevels = document.querySelectorAll("#list > div")
   const emptyText = document.getElementById("empty")
+  emptyText.style.display = "block"
 
   for (const level of allLevels) {
     let name
@@ -158,7 +159,6 @@ function updateLevels() {
       emptyText.style.display = "none"
     } else {
       level.style.display = "none"
-      emptyText.style.display = "block"
     }
   }
 }
