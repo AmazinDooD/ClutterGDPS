@@ -165,7 +165,10 @@ function updateLevels() {
 
 let inputContent = ""
 setInterval(() => {
-  inputContent = document.getElementById("search").value
+  const newContent = document.getElementById("search").value
+  if (newContent === inputContent) return // Return when the input hasn't changed
+
+  inputContent = newContent
   updateLevels()
 }, 200)
 
