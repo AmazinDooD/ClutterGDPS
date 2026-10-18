@@ -1,7 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <!-- Meta tags come first... -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- OpenGraph metadata (https://ogp.me) -->
+  <meta property="og:title" content="ClutterGDPS Demonlist">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cluttergdps.vercel.app/list/">
+  <meta property="og:description" content="The official demonlist for the ClutterGDPS.">
+  <meta property="og:determiner" content="the">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:site_name" content="ClutterGDPS">
   <title>ClutterGDPS Demonlist</title>
+
+  <!-- ...then our scripts and styles. -->
+  <style>
+    /* Don't worry about this. It becomes visible again near the end of the body tag.
+      This is just here to stop a flash of unstyled content. */
+    html {visibility: hidden; opacity: 0;}
+  </style>
   <link rel="stylesheet" type="text/css" href="/list/style.css">
   <script src="/list/script.js" type="text/javascript"></script>
 </head>
@@ -15,5 +33,9 @@
     <div class="list" id="list"></div>
     <div class="level" id="level"></div>
   </div>
+  <style>
+    /* Become visible now that the page's loaded (this will always be the last thing to load) */
+    html {visibility: visible; opacity: 1;}
+  </style>
 </body>
 </html>
