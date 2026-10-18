@@ -10,7 +10,7 @@ a.hlink {
   padding: 10px;
   border-radius: 5px;
   color: white;
-  transition-duration: 0.4s;
+  transition: all 0.4s;
   margin: 10px;
 }
 a.hlink:hover {
@@ -23,6 +23,7 @@ a.hlink:hover {
   padding-bottom: 20px;
   display: flex;
   align-items: center;
+  min-height: 10vh;
 }
 .logo {
   font-size: 40px;
@@ -33,15 +34,34 @@ a.hlink:hover {
   display: flex;
   margin-top: 20px;
 }
-.list {
+#list {
   flex: 25%;
   background-color: #222222;
   border-radius: 8px;
   padding: 10px;
   margin-right: 10px;
-  overflow-y: auto;
+  overflow: hidden scroll;
+  height: 77vh;
+  display: flex;
+  flex-direction: column;
 }
-.level {
+#empty {
+  color: #666;
+  text-align: center;
+}
+#search {
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #333333;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+
+  &:focus {outline: 1px solid white;}
+}
+#level {
   flex: 75%;
   background-color: #222222;
   border-radius: 8px;
@@ -54,10 +74,11 @@ a.hlink:hover {
   margin-bottom: 15px;
   padding: 10px;
   transition-duration: 0.4s;
-}
-.item:hover {
-  background-color: #424242;
-  cursor: pointer;
+
+  &:hover {
+    background-color: #424242;
+    cursor: pointer;
+  }
 }
 .selected {
   background-color: #424242;
@@ -83,6 +104,7 @@ a.hlink:hover {
 .lowerdiv {
   display: flex;
   justify-content: center;
+  padding-top: 10px;
 }
 .detailsdiv {
   flex: 66.54%;
@@ -104,4 +126,14 @@ a.hlink:hover {
   align-items: center;
   width: 560px;
   height: 315px;
+}
+
+/* stuff for mobile */
+@media (width <= 1100px) {
+  .lowerdiv {
+    flex-direction: column;
+  }
+  .video {
+    width: 95%;
+  }
 }
