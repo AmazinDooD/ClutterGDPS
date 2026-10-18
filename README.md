@@ -1,2 +1,2 @@
 # ClutterGDPS
-The source code for [cluttergdps.vercel.app].
+The source code for [the ClutterGDPS website](https://cluttergdps.vercel.app).
