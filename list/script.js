@@ -140,4 +140,33 @@ async function printlist() {
   }
 }
 
+function updateLevels() {
+  const allLevels = document.querySelectorAll("#list > div")
+  const emptyText = document.getElementById("empty")
+
+  for (const level of allLevels) {
+    let name
+    for (const child of level.children) {
+      if (child.classList.contains("name")) {
+        name = child.textContent
+        break
+      }
+    }
+
+    if (name.toLowerCase().includes(inputContent)) {
+      level.style.display = "block"
+      emptyText.style.display = "none"
+    } else {
+      level.style.display = "none"
+      emptyText.style.display = "block"
+    }
+  }
+}
+
+let inputContent = ""
+setInterval(() => {
+  inputContent = document.getElementById("search").value
+  updateLevels()
+}, 200)
+
 printlist();
