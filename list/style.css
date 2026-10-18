@@ -40,7 +40,7 @@ a.hlink:hover {
   border-radius: 8px;
   padding: 10px;
   margin-right: 10px;
-  overflow: auto hidden;
+  overflow: auto scroll;
   height: 77vh;
   display: flex;
   flex-direction: column;
